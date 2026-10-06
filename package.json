@@ -1,0 +1,15 @@
+{
+  "name": "42st-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketing, SEO and AI visibility dashboard for agencies",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node build.mjs && node tests/connectors.test.mjs && node tests/run.mjs",
+    "serve": "node build.mjs && npx --yes serve dist"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}

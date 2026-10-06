@@ -1,0 +1,11 @@
+# Minimal Supabase CLI config for the edge functions. Run `supabase init` first if you do not have one,
+# then merge these sections into your generated supabase/config.toml.
+
+[functions.google-callback]
+verify_jwt = false   # called by the browser after Google's consent screen; protected by a signed state value
+
+[functions.sync]
+verify_jwt = false   # authorises itself: signed-in members, or the scheduler via x-cron-secret
+
+[functions.connect]
+verify_jwt = true
